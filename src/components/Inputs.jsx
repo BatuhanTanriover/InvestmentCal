@@ -1,7 +1,3 @@
-import { useState } from "react";
-
-
-
 export default function Inputs({inputValues,onInputChange}) {
 
   const handleChange = (event) => {
@@ -18,11 +14,11 @@ export default function Inputs({inputValues,onInputChange}) {
           <input type="number" required name="initialInvestment" value={inputValues.initialInvestment} onChange={handleChange} />
         
           <label>Annual Investment</label>
-          <input type="number" required name="AnnualInvestment"value={inputValues.AnnualInvestment} onChange={handleChange}/>
+          <input type="number" required name="annualInvestment"value={inputValues.annualInvestment} onChange={handleChange}/>
           <label>Expected return</label>
-          <input type="number" required  name="ExpectedReturn" value={inputValues.ExpectedReturn} onChange={handleChange} />
+          <input type="number" required  name="expectedReturn" value={inputValues.expectedReturn} onChange={handleChange} />
           <label>Duration</label>
-          <input type="number" required name="Duration" value={inputValues.Duration} onChange={handleChange}/>
+          <input type="number" required name="duration" value={inputValues.duration} onChange={handleChange}/>
         </div>
       </section>
     </>
